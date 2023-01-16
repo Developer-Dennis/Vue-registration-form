@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="form">
+    <h1>Patient Management - Add Patient</h1>
+    <h2>Bio Data</h2>
+    <form action="">
+      <label>First Name:</label>
+      <input type="text" name="firstname" required>
+      <label>Middle Name:</label>
+      <input type="text" name="middlename" required>
+      <label>Last Name:</label>
+      <input type="text" name="lastname" required>
+    </form>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
   }
 }
 </script>
+<style>
+
+</style>
