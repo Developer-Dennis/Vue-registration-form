@@ -173,6 +173,7 @@ select{
 }
 button{
   display: table-cell;
+  position: bottom;
 }
   h1{
     background-color: grey;
@@ -193,6 +194,7 @@ button{
   }
   .contactinfo{
     float: left;
+    padding-left: 30px;
   }
   .upload{
     float: right;
