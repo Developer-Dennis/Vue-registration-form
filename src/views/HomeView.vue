@@ -40,11 +40,11 @@
       <div class="contactinfo">
         <h3>Contact Information</h3>
         <label>Cellphone:</label>
-        <input type="number" name="phonenumber" required>
+        <input type="text" name="phonenumber" required>
         <label>Cellphone:</label>
-        <input type="number" name="phonenumber" required>
+        <input type="text" name="phonenumber" required>
         <label> Other Cellphone:</label>
-        <input type="number" name="phonenumber" required>
+        <input type="text" name="phonenumber" required>
         <label>Current residence:</label>
         <input type="text" name="residence" required>
 
@@ -120,7 +120,6 @@
           <option value="moiben">MOIBEN</option>
         </select>
 
-
         <label>Sub Location:</label>
         <select name="sublocation" id="sublocation" required>
           <option value="sub location">sub location</option>
@@ -148,17 +147,49 @@ export default {
 *{
   padding: 0px;
   margin: 0px;
+  background-color:#E0FFFF;
+  color: black;
+}
+form{
+  display: table;
+  padding-left: 25px;
+}
+label{
+   display: table-cell; 
+}
+input{
+  display: table-cell;
+  width: 100px;
+  border-radius: 5px;
+  height: 20px;
+  background-color: white;
+}
+select{
+  display: table-cell;
+  width: 100px;
+  border-radius: 5px;
+  height: 20px;
+  background-color: white;
+}
+button{
+  display: table-cell;
 }
   h1{
     background-color: grey;
     font-size: 18px;
   }
-  .biodata{
+  .biodata {
     float: left;
-    background-color: rgb(164, 164, 255);
+  }
+  .biodata h3{
+    background-color: #1E90FF;
+    
   }
   .biodata h3{
     text-align: left;
+  }
+  .contactinfo h3{
+    background-color: #1E90FF;
   }
   .contactinfo{
     float: left;
